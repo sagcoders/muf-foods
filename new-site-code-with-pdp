@@ -18,10 +18,10 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
 .contact_div{
-	float:right !important;
+  float:right !important;
 }
 .map_div{ 
-	height:100%;
+  height:100%;
 }
 
 </style>
@@ -106,7 +106,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522432/Rose_syrup_brqsyi.jpg			" style="width:100%">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522432/Rose_syrup_brqsyi.jpg      " style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Chicago</h3>
       <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
@@ -200,7 +200,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <!-- <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
     <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button> -->
     <p align="justify"> Following the precedent set by the NCSA Mosaic browser in 1993, user agents generally don't justify both margins, in part because it's hard to do this effectively without sophisticated hyphenation routines. The advent of style sheets, and anti-aliased fonts with subpixel positioning promises to offer richer choices to HTML authors than previously possible.
-	Style sheets provide rich control over the size and style of a font, the margins, space before and after a paragraph, the first line indent, justification and many other details. The user agent's default style sheet renders P elements in a familiar form, as illustrated above. One could, in principle, override this to render paragraphs without the breaks that conventionally distinguish successive paragraphs. In general, since this may confuse readers, we discourage this practice.</p>
+  Style sheets provide rich control over the size and style of a font, the margins, space before and after a paragraph, the first line indent, justification and many other details. The user agent's default style sheet renders P elements in a familiar form, as illustrated above. One could, in principle, override this to render paragraphs without the breaks that conventionally distinguish successive paragraphs. In general, since this may confuse readers, we discourage this practice.</p>
   </div>
   
 
@@ -241,9 +241,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-col s4 contact_div">
         <h4>Contact</h4>
         <p>Questions? Go ahead.</p>
-        <form action="/action_page.php" target="_blank">
+        <form action="mail.php" target="_blank" id="myForm">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="email" placeholder="Email" name="Email" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
           <button type="submit" class="w3-button w3-block w3-black">Send</button>
@@ -253,8 +253,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-col s4 map_div">
                              <!-- Add Google Maps -->
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.954222739914!2d79.96972914942275!3d12.665909913062933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52fd08e97aa2a3%3A0x3fb96d7bd0abdee4!2sTamil+Nadu+603111!5e0!3m2!1sen!2sin!4v1503135187946"
-		 frameborder="0" style="border: 0; height:330px; width:100%;" allowfullscreen>
-	     </iframe>
+     frameborder="0" style="border: 0; height:330px; width:100%;" allowfullscreen>
+       </iframe>
 </div>
 <!--        <p><a href="#">About us</a></p>
         <p><a href="#">We're hiring</a></p>
@@ -306,6 +306,29 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 <script>
+//mail
+$(function () { 
+$("#myForm").submit(function (e) {
+        event.preventDefault(); 
+          var form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            dataType: "json",
+            data: form_data,
+            success: function(response) {
+              if(response.success == true){
+               top.location.href="http://sagsquad.16mb.com/";
+             }
+             console.log(response);
+            },
+            error: function(xhr, status, error){
+                console.log(xhr); 
+            }
+        });
+});
+});
+
 //Add Google Maps
 function myMap()
 {
