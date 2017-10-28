@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>MU Foods</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css? family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+</style>
+<body class="w3-content" w3-light-grey style="max-width:1300px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src =" http://res.cloudinary.com/dhtoqxo80/image/upload/v1508691272/MUFoods_Logo_o5ksj3.png"style=" width:100%">
+    <!-- <h3 class="w3-wide"><b>MU Foods</b></h3> -->
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Squash</a>
+    <a href="#" class="w3-bar-item w3-button">Honey</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Amla Products <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Honey Amla</a>
+      <a href="#" class="w3-bar-item w3-button">Amla Honey</a>
+      <a href="#" class="w3-bar-item w3-button">Amla Squash</a>
+      <a href="#" class="w3-bar-item w3-button">Amla Health Drink</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Syrup</a>
+    <a href="#" class="w3-bar-item w3-button">Pure Honey</a>
+    <a href="#" class="w3-bar-item w3-button">Mosambi Squash</a>
+    <a href="#" class="w3-bar-item w3-button">Fruit and Nut Honey</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">FSSAI Number</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">About Us</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">MU Foods</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">MUF</p>
+    <p class="w3-right">
+      <!-- <i class="fa fa-shopping-cart w3-margin-right"></i> -->
+      <!-- <i class="fa fa-search"></i> -->
+    </p>
+  </header>
+
+  <!-- Image header -->
+ <!-- <div class="w3-display-container w3-container">
+    <img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Natural Healthy Products</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Natural Healthy Products</h1>
+      <h1 class="w3-hide-small">FSSAI Certified</h1>
+      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+    </div>
+  </div> -->
+<!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522423/Grape_squash_banner_ciguyk.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522418/Fruits_Nuts_banner_rdwc56.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522432/Rose_syrup_brqsyi.jpg			" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+<div class="mySlides w3-display-container w3-center">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522411/banner_pineapple_r3wima.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+<!-- <div class="mySlides w3-display-container w3-center">
+    <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508089788/muf-site-images/amla-products/Amla_Honey.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div> -->
+
+  <!-- Product grid -->
+  <br> <div class="w3-row ">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685357/thumbnail-images/orange-squash-large-thumbnail.png" style="width:100%">
+        <p>Orange Squash<br><!-- <b>$24.99</b> --></p>
+      </div>
+
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508688066/thumbnail-images/mango-new-3.png" style="width:100%">
+        <p>Mango Squash<br><!-- <b>$19.99</b> --></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685352/thumbnail-images/nanari-thumbnail.png" style="width:100%">
+         <!--  <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div> -->
+        </div>
+        <p>Nanari Syrup<br><!-- <b>$19.99</b> --></p>
+      </div>
+
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685353/thumbnail-images/amla-health-drink-thumbnail.png" style="width:100%">
+        <p>Amla Health Drink<br><!-- <b>$20.50</b> --></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685354/thumbnail-images/mosambi-squash-thumbnail.png" style="width:100%">
+        <p>Mosambi Squash<br><!-- <b>$20.50</b> --></p>
+      </div>
+
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685353/thumbnail-images/fruit-and-nut-honey-thumbnail.png" style="width:100%">
+          <!-- <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div> -->
+        </div>
+        <p>Fruit And Nuts Honey<br><!-- <b class="w3-text-red">$14.99</b> --></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685350/thumbnail-images/grape-squash-thumbnail.png" style="width:100%">
+        <p>Grape Squash<br><!-- <b>$14.99</b> --></p>
+      </div>
+
+      <div class="w3-container">
+        <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685355/thumbnail-images/pineapple-thumb-edited.png" style="width:100%">
+        <p>Honey Amla<br><!-- <b>$24.99</b> --></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>About Us</h1>
+    <h5> We Produce Natural and Healthy Food Products</h5>
+    <!-- <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button> -->
+    <p align="justify"> Following the precedent set by the NCSA Mosaic browser in 1993, user agents generally don't justify both margins, in part because it's hard to do this effectively without sophisticated hyphenation routines. The advent of style sheets, and anti-aliased fonts with subpixel positioning promises to offer richer choices to HTML authors than previously possible.
+	Style sheets provide rich control over the size and style of a font, the margins, space before and after a paragraph, the first line indent, justification and many other details. The user agent's default style sheet renders P elements in a familiar form, as illustrated above. One could, in principle, override this to render paragraphs without the breaks that conventionally distinguish successive paragraphs. In general, since this may confuse readers, we discourage this practice.</p>
+  </div>
+  
+
+<!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508522419/Fruits_nuts_single_gexwyn.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="w3-third">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+             <!-- Add Google Maps -->
+                                                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.954222739914!2d79.96972914942275!3d12.665909913062933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52fd08e97aa2a3%3A0x3fb96d7bd0abdee4!2sTamil+Nadu+603111!5e0!3m2!1sen!2sin!4v1503135187946"
+                                                           frameborder="0" style="border: 0" allowfullscreen>
+                                                        </iframe>
+                                                           <!-- <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p> -->
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <!-- <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p> -->
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://sagsquad.16mb.com/" title="W3.CSS" target="_blank" class="w3-hover-opacity">SAG</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">FSSAI NUMBER</h2>
+      <p>Our Company Is Certified by FSSAI Food Safety and Standards Authority of India</p>
+      <!-- <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p> -->
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">12413008000836</button>
+    </div>
+  </div>
+</div>
+
+<script>
+//Add Google Maps
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+</body>
+</html>
