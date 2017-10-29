@@ -243,12 +243,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-col s4 contact_div">
         <h4>Contact</h4>
         <p>Questions? Go ahead.</p>
-        <form action="mail.php" target="_blank" id="myForm">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="email" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        <form action="mail.php" target="_blank" method="POST" id="myForm">
+          <p><input class="w3-input w3-border" id="form_name" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" id="form_email" type="email" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" id="form_sub" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" id="form_msg" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" id="buttonMail" class="w3-button w3-block w3-black">Send</button>
         </form>
       </div>
 
@@ -316,7 +316,27 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <script>
 //mail
-$(function () { 
+$(function() {
+$("#buttonMail").click(function() {
+	var val1 = $('#form_name').val();
+    var val2 = $('#form_email').val();
+    var val3 = $('#form_sub').val();
+    var val4 = $('#form_msg').val();
+$.ajax({
+    type: "POST",
+    url: "mail.php",
+     data: { text1: val1, text2: val2, text3: val3, text4: val4 },
+    success: function(){
+        //$('.success').fadeIn(1000);
+        top.location.href="http://sagblood.890m.com/";
+    }
+});
+ return false;
+    });
+});
+
+
+/*$(function () { 
 $("#myForm").submit(function (e) {
         event.preventDefault(); 
           var form_data = $(this).serialize();
@@ -327,7 +347,7 @@ $("#myForm").submit(function (e) {
             data: form_data,
             success: function(response) {
               if(response.success == true){
-               top.location.href="http://sagsquad.16mb.com/";
+               top.location.href="http://sagblood.890m.com/";
              }
              console.log(response);
             },
@@ -336,7 +356,7 @@ $("#myForm").submit(function (e) {
             }
         });
 });
-});
+});*/
 
 //Add Google Maps
 function myMap()
