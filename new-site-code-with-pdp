@@ -31,29 +31,29 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <img src =" http://res.cloudinary.com/dhtoqxo80/image/upload/v1508691272/MUFoods_Logo_o5ksj3.png"style=" width:100%">
+    <img src ="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509270569/logo/download.jpg"style=" width:100%">
     <!-- <h3 class="w3-wide"><b>MU Foods</b></h3> -->
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Squash</a>
-    <a href="#" class="w3-bar-item w3-button">Honey</a>
+    <a href="#squash" class="w3-bar-item w3-button">Squash</a>
+    <a href="#honey" class="w3-bar-item w3-button">Honey</a>
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Amla Products <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Honey Amla</a>
-      <a href="#" class="w3-bar-item w3-button">Amla Honey</a>
-      <a href="#" class="w3-bar-item w3-button">Amla Squash</a>
-      <a href="#" class="w3-bar-item w3-button">Amla Health Drink</a>
+      <a href="#honeyamla" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Honey Amla</a>
+      <a href="#amlacandy" class="w3-bar-item w3-button">Amla Candy</a>
+      <a href="#amlasmallpacket" class="w3-bar-item w3-button">தேன் நெல்லி</a>
+      <a href="#amlahealthdrink" class="w3-bar-item w3-button">Amla Health Drink</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button">Syrup</a>
-    <a href="#" class="w3-bar-item w3-button">Pure Honey</a>
-    <a href="#" class="w3-bar-item w3-button">Mosambi Squash</a>
-    <a href="#" class="w3-bar-item w3-button">Fruit and Nut Honey</a>
+    <a href="#syrup" class="w3-bar-item w3-button">Syrup</a>
+    <a href="#honey" class="w3-bar-item w3-button">Pure Honey</a>
+    <a href="#squash" class="w3-bar-item w3-button">Mosambi Squash</a>
+    <a href="#mangosquash" class="w3-bar-item w3-button">Fruit and Nut Honey</a>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">FSSAI Number</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">About Us</a>
+  <a href="#aboutus"  class="w3-bar-item w3-button w3-padding">About Us</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -94,29 +94,29 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522423/Grape_squash_banner_ciguyk.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <h3>Grape Squash</h3>
+      <p><b>Made with fresh grapes</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522418/Fruits_Nuts_banner_rdwc56.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <h3>Fruits & Nuts Honey</h3>
+      <p><b>Honey with fruits and nuts gives more healthy</b></p>    
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522432/Rose_syrup_brqsyi.jpg      " style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+      <h3>Rose Syrup</h3>
+      <p><b>Syrup Made up with rose gives a yummy taste</b></p>    
     </div>
   </div>
 <div class="mySlides w3-display-container w3-center">
     <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/c_scale,h_800,q_50,w_1200/v1508522411/banner_pineapple_r3wima.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <h3>Pineapple Squash</h3>
+      <p><b>Flavour that gives treat to your tongue</b></p>   
     </div>
   </div>
 <!-- <div class="mySlides w3-display-container w3-center">
@@ -131,16 +131,16 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div> -->
 
   <!-- Product grid -->
-  <br> <div class="w3-row ">
+   <div class="w3-row"  id="squash">
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685357/thumbnail-images/orange-squash-large-thumbnail.png" style="width:100%">
-        <p>Orange Squash<br><!-- <b>$24.99</b> --></p>
+        <p align="center">Orange Squash<br><!-- <b>$24.99</b> --></p>
       </div>
 
-      <div class="w3-container">
+      <div class="w3-container" id="mangosquash">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508688066/thumbnail-images/mango-new-3.png" style="width:100%">
-        <p>Mango Squash<br><!-- <b>$19.99</b> --></p>
+        <p align="center">Mango Squash<br><!-- <b>$19.99</b> --></p>
       </div>
     </div>
 
@@ -153,19 +153,19 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div> -->
         </div>
-        <p>Nanari Syrup<br><!-- <b>$19.99</b> --></p>
+        <p align="center">Nanari Syrup<br><!-- <b>$19.99</b> --></p>
       </div>
 
-      <div class="w3-container">
+      <div class="w3-container" id="amlahealthdrink">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685353/thumbnail-images/amla-health-drink-thumbnail.png" style="width:100%">
-        <p>Amla Health Drink<br><!-- <b>$20.50</b> --></p>
+        <p align="center">Amla Health Drink<br><!-- <b>$20.50</b> --></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685354/thumbnail-images/mosambi-squash-thumbnail.png" style="width:100%">
-        <p>Mosambi Squash<br><!-- <b>$20.50</b> --></p>
+        <p align="center">Mosambi Squash<br><!-- <b>$20.50</b> --></p>
       </div>
 
       <div class="w3-container">
@@ -176,54 +176,53 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
             <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
           </div> -->
         </div>
-        <p>Fruit And Nuts Honey<br><!-- <b class="w3-text-red">$14.99</b> --></p>
+        <p align="center">Fruit And Nuts Honey<br><!-- <b class="w3-text-red">$14.99</b> --></p>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685350/thumbnail-images/grape-squash-thumbnail.png" style="width:100%">
-        <p>Grape Squash<br><!-- <b>$14.99</b> --></p>
+        <p align="center">Grape Squash<br><!-- <b>$14.99</b> --></p>
       </div>
 
       <div class="w3-container">
         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685355/thumbnail-images/pineapple-thumb-edited.png" style="width:100%">
-        <p>Honey Amla<br><!-- <b>$24.99</b> --></p>
+        <p align="center">Pineapple Squash<br><!-- <b>$24.99</b> --></p>
       </div>
     </div>
   </div>
 
   <!-- Subscribe section -->
-  <div class="w3-container w3-green w3-padding-32">
+  <div class="w3-container w3-green w3-padding-32" id="aboutus">
     <h1>About Us</h1>
     <h5> We Produce Natural and Healthy Food Products</h5>
     <!-- <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
     <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button> -->
-    <p align="justify"> Following the precedent set by the NCSA Mosaic browser in 1993, user agents generally don't justify both margins, in part because it's hard to do this effectively without sophisticated hyphenation routines. The advent of style sheets, and anti-aliased fonts with subpixel positioning promises to offer richer choices to HTML authors than previously possible.
-  Style sheets provide rich control over the size and style of a font, the margins, space before and after a paragraph, the first line indent, justification and many other details. The user agent's default style sheet renders P elements in a familiar form, as illustrated above. One could, in principle, override this to render paragraphs without the breaks that conventionally distinguish successive paragraphs. In general, since this may confuse readers, we discourage this practice.</p>
+    <p align="justify" style="color:lavender"> We are Food Company we manufacture our own products at hygenic environment in our own factory, we are certified by food association of india, we manufacture SQUASH, SYRUP, HONEY, AMLA Proucts and many more which gives a extra treat to your tongue and makes you and your family more healthly, human body gets essential vitamins and minerals from fruits, we extract those vitamins and minerals directly from fruits and providing to you through our products, our products can be consumed by all age groups, and it's 100% vegetarian, products made by us is easy to consume, we offer products in different sizes to satisfy all type of consumer, eat heathly and stay healthy is our moto, we achieving it through our products </p>
   </div>
   
 
 <!-- Photo grid -->
- <div class="w3-row">
+ <div class="w3-row" id="syrup">
   <h5 align="center"> SYRUP </h5>
     <div class="w3-third">
-         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509218819/pdp/adust-rose.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509221040/pure-honey_pbaftt.png" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509229168/amla-packet-1_p8e79u.png" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+         <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509218819/pdp/adust-rose.png" style="width:100%" onclick="onClick(this)" alt="Rose Syrup">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509221040/pure-honey_pbaftt.png" style="width:100%" onclick="onClick(this)" alt="100% Nature Pure Honey" id="honey">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509229168/amla-packet-1_p8e79u.png" style="width:100%" onclick="onClick(this)" alt="Amla Honey Each Piece bathed in pure honey" id="honeyamla">
     </div>
 
 
    <div class="w3-third">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509213099/pdp/rose-syrup-1.png" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509224545/thumbnail-images/amla-berry.png" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert"> 
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509228148/honey-amla_sduwbz.png" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509213099/pdp/rose-syrup-1.png" style="width:100%" onclick="onClick(this)" alt="Rose Syrup">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509224545/thumbnail-images/amla-berry.png" style="width:100%" onclick="onClick(this)" alt="Honey Amla Berry"> 
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509228148/honey-amla_sduwbz.png" style="width:100%" onclick="onClick(this)" alt="Honey Amla Pouch" id="amlasmallpacket">
     </div>
     
     <div class="w3-third">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685352/thumbnail-images/nanari-thumbnail.png" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509222257/fruit_nut-4_lsc1gl.png" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509229777/amla-packet-2-2_en7gtq.png" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1508685352/thumbnail-images/nanari-thumbnail.png" style="width:100%" onclick="onClick(this)" alt="Nanari Syrup">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509222257/fruit_nut-4_lsc1gl.png" style="width:100%" onclick="onClick(this)" alt="Fruit & Nut Honey">
+      <img src="http://res.cloudinary.com/dhtoqxo80/image/upload/v1509229777/amla-packet-2-2_en7gtq.png" style="width:100%" onclick="onClick(this)" alt="Amla Candy" id="amlacandy">
     </div>
   </div>
   
@@ -243,12 +242,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-col s4 contact_div">
         <h4>Contact</h4>
         <p>Questions? Go ahead.</p>
-        <form action="mail.php" target="_blank" method="POST" id="myForm">
-          <p><input class="w3-input w3-border" id="form_name" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" id="form_email" type="email" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" id="form_sub" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" id="form_msg" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" id="buttonMail" class="w3-button w3-block w3-black">Send</button>
+        <form action="mail.php" target="_blank" id="myForm">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="email" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
         </form>
       </div>
 
@@ -316,27 +315,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <script>
 //mail
-$(function() {
-$("#buttonMail").click(function() {
-	var val1 = $('#form_name').val();
-    var val2 = $('#form_email').val();
-    var val3 = $('#form_sub').val();
-    var val4 = $('#form_msg').val();
-$.ajax({
-    type: "POST",
-    url: "mail.php",
-     data: { text1: val1, text2: val2, text3: val3, text4: val4 },
-    success: function(){
-        //$('.success').fadeIn(1000);
-        top.location.href="http://sagblood.890m.com/";
-    }
-});
- return false;
-    });
-});
-
-
-/*$(function () { 
+$(function () { 
 $("#myForm").submit(function (e) {
         event.preventDefault(); 
           var form_data = $(this).serialize();
@@ -356,7 +335,7 @@ $("#myForm").submit(function (e) {
             }
         });
 });
-});*/
+});
 
 //Add Google Maps
 function myMap()
